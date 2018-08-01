@@ -1,0 +1,10 @@
+Describe the effect each of the P, I, D components had in your implementation.
+
+Proportional gain: causes system to react more quickly, but also overshoot
+Integral gain: drives down steady state error, but can slow down system response
+Derivative gain: allows system to anticipate error, adding damping and preventing overshoot
+
+
+Describe how the final hyperparameters were chosen.
+
+Hyperparameters were chosen by manual tuning.  First gains were zeroed.  Proportional gain raised until steady oscillation achieved.  Derivative added to smooth oscillation.  Integral added to slightly stabilize.  Car still has a slight oscillation, but makes a lap around the track steadily at ~30mpg.
